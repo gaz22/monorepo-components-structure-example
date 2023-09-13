@@ -9,7 +9,6 @@
     "build": "nx run-many --target=rollup --all",
     "gen:template": "cd ./template-generator && yarn start"
   },
-  "private": true,
   "dependencies": {},
   "devDependencies": {
     "@nrwl/cli": "13.10.2",
