@@ -29,9 +29,5 @@
     "react-dom": "^18.2.0",
     "rollup": "^3.28.1",
     "storybook": "^7.4.0"
-  },
-  "workspaces": [
-    "template-generator/*",
-    "components-core/*"
-  ]
+  }
 }
