@@ -19,8 +19,8 @@ const CONFIG_DIR = './template/config';
 const TEMPLATE_DIR = './template/component';
 
 const generateFiles = (folderPath: string, componentName: string) => {
-  const componentDir = `../components-core/${componentName}/src`;
-  const configDir = `../components-core/${componentName}/`;
+  const componentDir = `../components/${componentName}/src`;
+  const configDir = `../components/${componentName}/`;
 
   fs.readdir(folderPath, (err, files) => {
     if (err) {
@@ -49,9 +49,9 @@ const generateFiles = (folderPath: string, componentName: string) => {
 
 
 rl.question('Enter the component name: ', (componentName: string) => {
-  const componentDir = `../components-core/${componentName}/src`;
-  const componentStoriesDir = `../components-core/${componentName}/src/stories`;
-  const configDir = `../components-core/${componentName}/`;
+  const componentDir = `../components/${componentName}/src`;
+  const componentStoriesDir = `../components/${componentName}/src/stories`;
+  const configDir = `../components/${componentName}/`;
 
   // Create the component directory
   createComponentDirs([
